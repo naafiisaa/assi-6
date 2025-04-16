@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning English</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-poppins {
+            font-family: "poppins"
+        }
+    </style>
+      
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.19.1/dist/sweetalert2.all.min.js"></script>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-poppins">
+    <header>
+        <div id="navbar-section" class="navbar px-10 py-6 border-[1px] bg-linear-to-br from-[#C6BDBD] to-[#FFFFFF]  border-[#C6BDBD]">
+            <div class="navbar-start">
+                <div class="flex gap-2 text-xl ">
+                    <p class="font-semibold">English</p><img alt="logo" src="image.png" class="h-7" />
+                    <p>জানালা</p>
+                </div>
+            </div>
+            <div class="navbar-end flex gap-2">
+                <a href="#faq-section"
+                    class="px-4 py-3 border border-[#422AD5] my-auto rounded-sm text-sm font-semibold text-[#422AD5] flex gap-2 hover:bg-blue-700"><i
+                        class="fa-solid fa-circle-question my-auto"></i>
+                    <P>FAQ</P>
+                </a>
+                <a href="#learn-section"
+                    class="px-4 py-3 border border-[#422AD5] my-auto rounded-sm text-sm font-semibold text-[#422AD5] flex gap-2 hover:bg-blue-700"><i
+                        class="fa-solid fa-book-open my-auto"></i>
+                    <P>Learn</P>
+                </a>
+                <a id="logout-btn"
+                    class="px-4 py-3 border border-[#422AD5] text-sm my-auto rounded-sm font-semibold  hover:bg-blue-700 text-[#422AD5] flex gap-2"><i
+                        class="fa-solid fa-arrow-right-from-bracket my-auto"></i>
+                    <P>Log Out</P>
+                </a>
+            </div>
+        </div>
+
+        </div>
+
+
+
+
+
+        <!--BANNER SECTION-->
+
+        <div class="hero min-h-screen" id="banner-section">
+            <div class=" gap-12 hero-content flex-col lg:flex-row-reverse">
+                <div class="">
+                    <img src="assets/hero-student.png" alt="Hero" class=" ">
+                </div>
+                <div class="">
+                    <h1 class="font-bold text-4xl "><span class="text-[#00BCFF]">English</span> is Easy!!</h1>
+                    <P class="text-xl font-medium my-4 ">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন
+                        অথবা
+                        আপনার দক্ষতা বাড়াতে
+                        চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</P>
+                    <div class="flex flex-col">
+                        <input type="text" class="input my-4" placeholder="Enter your name"  id="name-input" />
+                        <input type="password" class="input" placeholder="Password"   id="password-input" />
+                        <button
+                            class="btn w-1/4 mt-4 bg-[#422AD5] text-[#E0E7FF] font-semibold text-sm border solid border-teal-700 rounded-sm" id="login-btn">Get
+                            Started</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--FAQ section-->
+        <section id="faq-section" class="p-10">
+            <h1 class="text-4xl my-6 text-center text-[#18181B] font-bold">Frequently <span class="text-[#00BCFF]">
+                    Asked Questions</span></h1>
+
+            <div class="collapse collapse-plus my-4 bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title font-medium text-[#18181B]">How can I start learning English on this website?</div>
+                <div class="collapse-content text-sm text-[#62748E]">You can start by exploring our beginner lessons, interactive
+                    exercises, and quizzes. We also offer structured courses to guide you step by step.</div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
+                <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the
+                    instructions sent to your email.</div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">How do I update my profile information?</div>
+                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make
+                    changes.</div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">How do I update my profile information?</div>
+                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make
+                    changes.</div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">How do I update my profile information?</div>
+                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make
+                    changes.</div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer border-t-[3px] border-[#ffebeb] sm:footer-horizontal bg-white text-black p-10">
+        <aside class="">
+            <div class="flex gap-2 text-xl my-4">
+                <p class="font-semibold">English</p><img alt="logo" src="image.png" class="h-7" />
+                <p>জানালা</p>
+            </div>
+            <p class="font-medium text-base">
+                ইংরেজি শিখুন সহজে
+            </p>
+            <p class="font-light"> Providing ED-Tech Applications since 2025</p>
+
+        </aside>
+        <nav class=" mt-16 lg:ml-72">
+            <h6 class="text-sm font-semibold text-[#808080]">Follow us</h6>
+            <div class="grid grid-flow-col gap-4 social-share-container">
+
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"
+                    class="facebook-btn hover:bg-blue-400" target="_blank">
+                    <i class="fa-brands fa-square-facebook fa-xl"></i>
+                </a>
+                <a href="https://www.youtube.com/" class="youtube-btn hover:bg-blue-400" target="_blank">
+                    <i class="fa-brands fa-square-youtube fa-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="instagram-btn hover:bg-blue-400" target="_blank">
+
+                    <i class="fa-brands fa-square-instagram fa-xl"></i>
+
+                    <a href="https://github.com/" class="github-btn hover:bg-blue-400 " target="_blank">
+                        <i class="fa-brands fa-square-github fa-xl"></i>
+                    </a>
+
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
